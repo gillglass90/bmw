@@ -1,0 +1,218 @@
+@charset "utf-8";
+/* CSS Document */
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px; /* Margin bottom by footer height */
+}
+       
+header {
+        margin:30px;	
+        padding:10px 10px;	
+        background: #fefefe;
+        background-size: cover;
+}
+
+.bwm-logo.jpg{
+	float:left;
+}
+
+/* declare grid */
+main{
+	display: grid; /* defines the grid */
+	grid-template-areas: 'left right'; /* defines the layout */
+	min-height: 100%;
+	grid-gap: 20px;
+	padding: 100px;
+}
+.left{grid-area: left; } /* grid names */
+.right{grid-area: right; } /* grid names */
+
+
+ @media only screen and (max-width: 1200px)  {
+    main {
+        grid-template-areas:
+        'left'
+	    'right';
+    } 
+}
+
+h1 {
+    text-align: center;
+    color: #00447e;
+    font-family: 'Josefin Sans', sans-serif;	
+}
+
+nav li {
+      display: inline-block;
+      padding:5px 85px;
+	  color:#597caa;
+	 	
+}
+
+nav ul {
+      list-style: none;
+      margin: 5px;
+      padding:5px;
+	  display: flex;
+      justify-content: space-around;
+	  color:#597caa;
+}
+
+nav {
+     text-align: center;	
+     max-width:100%;		
+     line-height:1em;
+     margin: 10px 0 0 ;
+     padding: 10px 0;		
+     background-color: #000;
+}
+
+nav a {
+     font-size: 18px;
+     color: #597caa;
+	 font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+  text-align: center;
+}
+
+h5 {
+	font-family: 'Josefin Sans', sans-serif;
+	color:#000;
+	font-size: 18px;
+}
+
+ p {
+    font-family: 'Josefin Sans', sans-serif;
+	padding:20px;
+	font-size: 18px; 
+	text-align: center;
+}
+
+video{
+width:100%;
+max-width:700px;
+height:auto;	
+margin: 0 auto;
+padding: 1em;
+border: 2px solid #CCC;
+border-radius: 1em;
+border-color: #597cca;	
+}
+
+.video-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+
+iframe{
+width:100%;	
+max-width:700px;
+height:380px;
+margin: 0 auto;
+padding: 1em;
+border: 2px solid #CCC;
+border-radius: 1em;
+border-color: #597cca;	
+}	
+
+.video-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+audio {
+width:100%;
+max-width:400px;
+margin: 0 auto;
+padding: 2px;
+border: 2px solid #CCC;
+border-radius: 2.5em;
+border-color: #597cca;
+	
+}
+
+.material-icons{
+	color: #597caa;
+    position:absolute
+}
+
+/* footer*/
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px; /* Set the fixed height of the footer here */
+  line-height: 60px; /* Vertically center the text there */
+  text-align: center;
+  background-color: #00447e;
+  background:#00447e;
+}
+
+h6 {
+	font-family:"Josefin Sans", sans-serif;
+	text-align: center;
+	
+}
+.media {
+	position: fixed;
+	top: 50%;
+	left:50%;
+	transform: translate(0)
+}
+
+.fa {
+	
+  padding: 15px;
+  font-size: 25px;
+  width: 50px;
+  text-align: center;
+  text-decoration:none;
+  border-radius: 75%;
+  margin: 25px;	
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.9;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #fefefe;
+  color: #00447E;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #fefefe;
+  color: #00447e;
+}
+
+/*Youtube*/
+.fa-youtube{
+  background: #fefefe;
+  color: #00447e;
+}
+/* Instagram*/
+.fa-instagram {
+  background: #fefefe;
+  color: #00447e;
+  }
+
+
+
+
